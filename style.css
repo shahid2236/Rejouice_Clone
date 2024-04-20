@@ -1,0 +1,341 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: rejouice;
+    src: url(./Rejouice-Headline.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "nb";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    position: relative;
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+#page1-content {
+    height: 100%;
+    width: 100%;
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-bottom: 5vw; */
+    /* display: inline-block; */
+}
+
+nav {
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+}
+
+nav h3 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+nav h4 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+#page1-content h1 {
+    font-family: rejouice;
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+
+#page1-content h1 span {
+    font-family: rejouice;
+    display: inline-block;
+}
+
+#cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #ff5f3f;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+#cursor h5 {
+    font-size: 1.15vw;
+    font-weight: 500;
+
+}
+
+#page2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #faf8f3;
+    position: relative;
+}
+
+#page2-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #00000092;
+    height: 20%;
+    margin: 0 4vw;
+    padding-bottom: 1.3vw;
+    /* width: 80%;
+    text-align: center; */
+    /* border-width: 80%;*/
+    /* font-weight: 100;  */
+}
+
+.elem h1 {
+    font-weight: 500;
+    font-size: 4.2vw;
+    margin: 0 3.5vw;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+    background-color: #faf8f3;
+}
+
+#page3-top {
+    /* background-color: red; */
+    text-align: center;
+
+}
+
+#page3-top h4 {
+    margin-top: 20vh;
+    margin-bottom: 1.2vw;
+    font-size: 1vw;
+    font-weight: 500;
+
+}
+
+#page3-top h4 span {
+    font-size: 0.7vw;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+#page3-top h2 {
+    font-size: 4vw;
+    font-weight: 10;
+}
+
+#page3-elements {
+    height: 75vh;
+    width: 100%;
+    /* background-color:red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vw;
+}
+
+#page3-elements .box {
+    height: 100%;
+    width: 32.5%;
+    /* background-color: blue; */
+    position: relative;
+    border: none;
+}
+
+#page3-elements .box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 0.7s;
+}
+
+#page3-elements .box:hover img {
+    opacity: 0;
+}
+#pagex {
+    height: 100vh;
+    width: 100vw;
+    background-color: #faf8f3;
+    position: relative;
+}
+#pagex-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #00000092;
+    height: 20%;
+    margin: 0 4vw;
+    padding-bottom: 1.3vw;
+}
+#pagex .element h1{
+    font-weight: 100;
+    font-size: 4.2vw;
+    margin: 0 3.5vw;
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf8f3;
+}
+#page4 video{
+    height: 100%;
+}
+#page4 svg{
+    position: absolute;
+    height: 60%;
+
+}
+#page4 h2{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    color: #fff;
+}
+#cursor2 {
+    height: 5.5vw;
+    width: 5.5vw;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate(-50%, -50%); */
+}
+#cursor2 h5{
+    color: #fff;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+    background-color: #faf8f3;
+}
+#page5 h1{
+    font-size: 8vw;
+    font-family: rejouice;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    width: 96%;
+    margin-left: 2%;
+
+}
+#swiperdiv{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+
+
+
+.swiper {
+    width: 130%;
+    height: 100%;
+    /* position: relative; */
+    /* margin-top: -5%; */
+  }
+
+  .swiper-slide {
+    /* width: 400px; */
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 19%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+
+nav h3:hover{
+    cursor: pointer;
+}
+nav h4:hover{
+    cursor: pointer;
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 7px;
+}
+
+#loader h3{
+    font-weight: 100;
+}
+
+
+
+
+
